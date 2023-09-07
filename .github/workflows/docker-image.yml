@@ -16,9 +16,7 @@ jobs:
       url: "https://api.dobcon.com"
     steps:
       
-      - name: Publish summary
-        env:
-          URL: "https://api.dobcon.com"
+      - name: Deployment test message
         run: |
-          echo "Environment URL: $URL: $(($NUM+61000+${{ github.event.pull_request.number }}))" >> $GITHUB_STEP_SUMMARY  
+          echo "App deployed"
   
