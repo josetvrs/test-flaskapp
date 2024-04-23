@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Build test message
         run: |
-          echo "App deployed"
+          eho "App deployed"
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
